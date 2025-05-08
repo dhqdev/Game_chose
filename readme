@@ -1,0 +1,70 @@
+🎯 Game_chose
+Game_chose é um jogo simples e divertido de adivinhação de números feito em Python. Você escolhe um número entre 1 e 100 e tenta adivinhar qual foi o número secreto escolhido aleatoriamente pelo computador.
+
+Spoiler: Não é fácil... mas é viciante! 😅
+
+💡 Como funciona
+O computador escolhe aleatoriamente um número entre 1 e 9 (sim, o aviso fala 1 a 100, mas o código usa 1 a 9 — podemos corrigir isso depois).
+
+O jogador digita tentativas até acertar o número secreto.
+
+O jogo dá dicas se você precisa tentar um número maior ou menor.
+
+Ao acertar, o jogo parabeniza você e mostra quantas tentativas foram necessárias.
+
+📦 Requisitos
+Python 3.x instalado
+
+▶️ Como jogar
+Clone o repositório:
+
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/Game_chose.git
+Acesse a pasta:
+
+bash
+Copiar
+Editar
+cd Game_chose
+Execute o jogo:
+
+bash
+Copiar
+Editar
+python game_chose.py
+🧠 Exemplo de saída
+less
+Copiar
+Editar
+Bem-vindo ao Jogo da Adivinhação!
+Estou pensando em um número entre 1 e 100. Tente adivinhar!
+Digite um número: 5
+Tente um número menor!
+Digite um número: 3
+Tente um número maior!
+Digite um número: 4
+Parabéns! Você acertou o número em 3 tentativas!
+📌 Observação importante
+No código atual, o número secreto vai de 1 a 9, mas a mensagem inicial fala "entre 1 e 100". Você pode ajustar isso mudando esta linha:
+
+python
+Copiar
+Editar
+numero_secreto = random.randint(1, 100)
+Ou então mudar o texto da introdução. Fica a seu critério!
+
+🎯 Objetivo
+Esse jogo é ótimo para quem está começando a aprender Python e quer praticar:
+
+Entrada de dados com input()
+
+Conversão de tipos (int)
+
+Estrutura de repetição while
+
+Condicionais if/elif/else
+
+Geração de números aleatórios com random
+
